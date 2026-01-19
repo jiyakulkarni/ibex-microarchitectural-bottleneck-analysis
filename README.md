@@ -1,4 +1,4 @@
-# Cycle-Accurate Microarchitectural and Pipeline Bottleneck Analysis of the Ibex RISC-V Core
+# Cycle-Accurate Microarchitectural and Pipeline Bottleneck Analysis of the Ibex RISC-V Core Using RTL Instrumentation and Real Software Workloads
 
 This project presents a cycle-accurate microarchitectural and pipeline-level bottleneck analysis of the Ibex RISC-V core using RTL instrumentation, execution tracing, and real bare-metal software workloads.
 
