@@ -54,11 +54,8 @@ Stalls are classified using cycle-accurate timing into:
 - FuseSoC
 - Bare-metal RISC-V software
 
-## Waveform-Based Performance Analysis
-
-![Pipeline and CPI Bottleneck Analysis](waveforms/screenshots/analysis.png)
-
 ---
+
 ## Pipeline Waveform Analysis
 
 The following waveform screenshots were captured from cycle-accurate
