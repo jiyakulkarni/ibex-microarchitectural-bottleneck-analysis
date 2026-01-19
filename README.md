@@ -55,6 +55,23 @@ Stalls are classified using cycle-accurate timing into:
 - Bare-metal RISC-V software
 
 ---
+## Pipeline Waveform Analysis
 
-## Repository Structure
+The following waveform screenshots were captured from cycle-accurate
+Verilator simulations and analyzed using GTKWave. These waveforms validate
+the internal behavior of the 5-stage Ibex pipeline and confirm the stall
+and bottleneck conclusions derived from trace-based analysis.
+
+### Pipeline Stage Progression
+![Pipeline Stage 1](waveforms/screenshots/pipeline1.jpeg)
+![Pipeline Stage 2](waveforms/screenshots/pipeline2.jpeg)
+![Pipeline Stage 3](waveforms/screenshots/pipeline3.jpeg)
+![Pipeline Stage 4](waveforms/screenshots/pipeline4.jpeg)
+![Pipeline Stage 5](waveforms/screenshots/pipeline5.jpeg)
+
+These waveforms demonstrate:
+- Correct instruction flow across IF, ID, EX, MEM, and WB stages
+- Memory-stage dominance during stall periods
+- Minimal control-hazard impact compared to memory latency
+- Correlation between RTL-observed stalls and CPI estimates
 
