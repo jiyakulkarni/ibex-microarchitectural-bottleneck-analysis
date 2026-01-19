@@ -73,5 +73,34 @@ These waveforms demonstrate:
 - Correct instruction flow across IF, ID, EX, MEM, and WB stages
 - Memory-stage dominance during stall periods
 - Minimal control-hazard impact compared to memory latency
-- Correlation between RTL-observed stalls and CPI estimates
+  
+## Key Microarchitectural Findings
 
+- The workload is **memory-dominated**, with ~50% of instructions being loads or stores.
+- Pipeline stall attribution shows that **EX-stage stalls dominate**, indicating memory access latency as the primary bottleneck.
+- Load-use hazards are minimal, confirming effective forwarding in the 5-stage Ibex pipeline.
+- CPI is highly sensitive to memory latency and cache hit rate, ranging from ~8.6 (no cache) to ~2.0 (95% hit rate).
+- Branch behavior contributes modestly to CPI due to low branch density.
+
+## Pipeline and Waveform Correlation
+
+The following waveforms illustrate instruction flow and stall behavior across the 5-stage pipeline:
+
+- IF / ID / EX / MEM / WB stage progression
+- Stall propagation during memory operations
+- Correlation between execution trace timing and RTL signals
+
+See: `waveforms/screenshots/`
+
+## Why This Analysis Matters
+
+This project demonstrates how cycle-accurate traces and RTL-aware analysis can be used to:
+- Identify true performance bottlenecks beyond instruction counts
+- Quantify the impact of memory systems on in-order pipelines
+- Guide architectural decisions such as caching, prefetching, and pipeline tuning
+
+The methodology is portable to other RISC-V cores and embedded processors.
+
+- Branch behavior contributes modestly to CPI due to low branch density.
+
+- Correlation between RTL-observed stalls and CPI estimates
