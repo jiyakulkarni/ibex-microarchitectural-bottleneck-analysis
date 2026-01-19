@@ -1,0 +1,4 @@
+# Simulation traces
+traces/
+*.log
+
