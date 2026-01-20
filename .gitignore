@@ -1,5 +1,4 @@
 # Large simulation artifacts
 traces/
-waveforms/
 *.log
 
