@@ -56,10 +56,10 @@ Stalls are classified using cycle-accurate timing into:
 
 ## Waveform-Based Performance Analysis
 
-![Pipeline and CPI Bottleneck Analysis 1](waveforms/screenshots/analysis.png)
-![Pipeline and CPI Bottleneck Analysis 2](waveforms/screenshots/analysis1.png)
-![Pipeline and CPI Bottleneck Analysis 3](waveforms/screenshots/trace.png)
-![Pipeline and CPI Bottleneck Analysis 4](waveforms/screenshots/cpi.png)
+![Pipeline and CPI Bottleneck Analysis 1](waveforms/screenshots/analysis.jpeg)
+![Pipeline and CPI Bottleneck Analysis 2](waveforms/screenshots/analysis1.jpeg)
+![Pipeline and CPI Bottleneck Analysis 3](waveforms/screenshots/trace.jpeg)
+![Pipeline and CPI Bottleneck Analysis 4](waveforms/screenshots/cpi.jpeg)
 
 ---
 
